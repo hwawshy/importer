@@ -1,0 +1,11 @@
+[
+    {
+        "gtin": "2306833701228",
+        "language": "es",
+        "title": "Product 2",
+        "picture": "http:\/\/example.com\/image2.jpg",
+        "description": "This is the description for product 2.",
+        "price": "127.81",
+        "stock": "87"
+    }
+]
