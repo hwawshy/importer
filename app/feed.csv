@@ -1,8 +1,8 @@
 gtin,language,title,picture,description,price,stock
 7034621736823,it,Product 1,http://example.com/image1.jpg,This is the description for product 1.,738.7,99
-2306833701228,es,Product 2,http://example.com/image2.jpg,This is the description for product 2.,127.81,87
-6170134735873,en,Product 3,http://example.com/image3.jpg,This is the description for product 3.,579.06,25
-8364747833520,it,Product 4,http://example.com/image4.jpg,This is the description for product 4.,516.44,97
+2306833701228,es,Product 2,http://example.com/image2.jpg,This is the description for product 2.,127.81,fake stock
+6170134735873,long language code,Product 3,http://example.com/image3.jpg,This is the description for product 3.,579.06,25
+fake gtin,it,Product 4,http://example.com/image4.jpg,This is the description for product 4.,516.44,97
 2273592259505,it,Product 5,http://example.com/image5.jpg,This is the description for product 5.,816.27,17
 7552776204188,en,Product 6,http://example.com/image6.jpg,This is the description for product 6.,412.37,54
 2955716275227,fr,Product 7,http://example.com/image7.jpg,This is the description for product 7.,206.99,68

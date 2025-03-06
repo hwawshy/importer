@@ -41,6 +41,8 @@ readonly class FeedImportService
             throw new \InvalidArgumentException(sprintf("Can't find %s", $filepath));
         }
 
+        $this->logger->info(sprintf('Importing feed from %s', $realpath));
+
         $reader = $this->getReader($format);
         $repository = $this->getRepository($database);
 

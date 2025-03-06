@@ -46,6 +46,8 @@ class FeedImportCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        $output->writeln('Importing feed...');
+
         $filepath = $input->getArgument('filepath');
         $format = FormatEnumeration::tryFrom(strtolower($input->getOption('format')));
         $database = DatabaseEnumeration::tryFrom(strtolower($input->getOption('database')));
@@ -59,6 +61,8 @@ class FeedImportCommand extends Command
         }
 
         $this->feedImportService->import($filepath, $format, $database);
+
+        $output->writeln('Finished importing feed');
 
         return Command::SUCCESS;
     }
