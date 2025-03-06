@@ -32,4 +32,11 @@ class MySQLProductRepository extends ServiceEntityRepository implements ProductR
     {
         return 'mysql';
     }
+
+    public function deleteAll(): void
+    {
+        $this->getEntityManager()->getConnection()->executeStatement(
+            "DELETE FROM `product`"
+        );
+    }
 }

@@ -42,7 +42,7 @@ readonly class FeedNormalizer
             throw new FeedNormalizerException(sprintf('Invalid price %s', $price));
         }
 
-        return intval(round(floatval($normalized), 2) * 100);
+        return intval(round(floatval($normalized * 100), 2));
     }
 
     private function normalizeStock(string $stock): int

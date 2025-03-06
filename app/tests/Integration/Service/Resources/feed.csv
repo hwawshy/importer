@@ -1,0 +1,5 @@
+gtin,language,title,picture,description,price,stock
+7034621736823,it,Product 1,http://example.com/image1.jpg,This is the description for product 1.,738.7,99
+2306833701228,es,Product 2,http://example.com/image2.jpg,This is the description for product 2.,127.81,87
+6170134735873,en,Product 3,http://example.com/image3.jpg,This is the description for product 3.,579.06,25
+8364747833520,it,Product 4,http://example.com/image4.jpg,This is the description for product 4.,516.44,97
