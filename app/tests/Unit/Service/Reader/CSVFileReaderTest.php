@@ -20,11 +20,13 @@ class CSVFileReaderTest extends TestCase
         $this->assertMatchesJsonSnapshot(json_encode(iterator_to_array($reader->read($filepath))));
     }
 
-    public function fileProvider(): iterable
+    public function fileProvider(): array
     {
-        yield [ __DIR__ . '/Resources/empty_feed.csv'];
-        yield [__DIR__ . '/Resources/header_only.csv'];
-        yield [__DIR__ . '/Resources/has_blank_line.csv'];
-        yield [__DIR__ . '/Resources/mismatching_fields.csv'];
+        return [
+            'empty feed' => [__DIR__ . '/Resources/empty_feed.csv'],
+            'header only' => [__DIR__ . '/Resources/header_only.csv'],
+            'blank lines' => [__DIR__ . '/Resources/blank_line.csv'],
+            'mismatching fields' => [__DIR__ . '/Resources/mismatching_fields.csv']
+        ];
     }
 }
